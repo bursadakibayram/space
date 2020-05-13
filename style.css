@@ -1,0 +1,322 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  background-color: #100e17;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    margin: 4rem 0;
+    background-image: linear-gradient(90deg,#ff8a00,#e52e71);
+    border-radius: 5px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.thickUzay {
+    margin-top: 15px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.related-posts {
+    background: #100e17;
+    padding: 2rem 2rem 0;
+}
+
+.jp-relatedposts-items {
+    display: flex;
+}
+
+.jp-relatedposts-post {
+    font-size: .75rem;
+    background: #201c29;
+    color: #FFECD1;
+    border: 1px solid #312d3c;
+    box-shadow: 0 4px 80px #000;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 70s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+.flier2 {
+    pointer-events: none;
+}
+
+.flier2 > * {
+/* Adjust animation duration to change the element’s speed */
+    animation: flys 45s linear infinite;
+    pointer-events: none !important;
+    top: 0;
+    left: 0;
+    transform: translateX(-110%) translateY(-110%) rotateZ(0);
+    position: fixed;
+    animation-delay: 1s;
+    z-index: 999999;
+}
+
+
+.comments-closed {
+    background: #100e17;
+    border: 2px solid #e52e71;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 3rem;
+    color: #FFECD1;
+
+}
+
+
+.WBlock {
+	position: relative;
+    background: #f5f5f5;
+    color: #17141d;
+    box-shadow: 0 4px 80px #070509;
+    padding: 2rem;
+    border-radius: 16px;
+    list-style: none;
+    position: relative;
+    margin: 3rem;
+    background-image: url(img/back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.cBlock {
+    position: relative;
+    background: #f5f5f5;
+    color: #17141d;
+    box-shadow: 0 4px 80px #070509;
+    padding: 2rem;
+    border-radius: 16px;
+    list-style: none;
+    position: relative;
+    margin: 3rem;
+    background-image: url(img/back.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.block {
+    position: relative;
+    background: #17141d;
+    color: #FFECD1;
+    box-shadow: 0 4px 80px #070509;
+    padding: 2rem;
+    border-radius: 16px;
+    list-style: none;
+    position: relative;
+    margin: 3rem;
+    background-image: url(img/back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.album {
+    /*box-shadow: 0 4px 80px #070509;*/
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.textMarg {
+	margin-left: 3rem;
+	margin-right: 3rem;
+	color: #FFECD1;
+}
+
+#blackLink a {
+    color: #17141d;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+#activeA {
+    color: #FDCA40;
+
+}
+
+#textLink {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #FFECD1;
+    display: inline-block;
+    font-style: normal;
+    font-size: 50pt;
+    margin-block-start: 25px;
+    margin-block-end: 10px;
+
+}
+
+
+
+@keyframes pulse {
+  from {
+    transform: scale(.97);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.97);
+  }
+}
+
+@font-face {
+	font-family: stand;
+	src: url('MarkaziR.ttf');
+}
+.stand {
+	font-family: stand;
+	font-size: 30pt;
+}
+
+
+.standSub {
+    font-family: stand;
+    font-size: 25pt;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+}
+
+
+.standH {
+    font-family: stand;
+    font-size: 40pt;
+    margin-block-end: 5px;
+}
+
+
+@font-face {
+	font-family: elyazi;
+	src: url('Petit.ttf');
+}
+.elyazi {
+	font-family: elyazi;
+	font-size: 10pt;
+}
+
+.elyaziL {
+	font-family: elyazi;
+	font-size: 8pt;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+@keyframes flys {
+
+    98.001%, 0% {
+                display: block;
+        transform: translateX(-180%) translateY(100vh) rotateZ(0deg)
+    }
+
+    15% {
+        transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+    }
+
+    15.001%, 18% {
+        transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+    }
+
+    40% {
+        transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+    }
+
+    40.001%, 43% {
+        transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+    }
+
+    65% {
+        transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+    }
+
+    65.001%, 68% {
+        transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+    }
+
+    95% {
+        transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+    }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
