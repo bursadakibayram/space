@@ -124,6 +124,20 @@ hr {
     background-position: top;
 }
 
+.yBlock {
+    position: relative;
+    background: #f5f5f5;
+    color: #17141d;
+    box-shadow: 0 4px 80px #070509;
+    padding: 2rem;
+    border-radius: 16px;
+    list-style: none;
+    position: relative;
+    margin: 3rem;
+
+}
+
+
 .block {
     position: relative;
     background: #17141d;
@@ -200,6 +214,13 @@ a {
 	font-size: 30pt;
 }
 
+.standLit {
+    font-family: stand;
+    font-size: 24pt;
+    color: gray;
+}
+
+
 
 .standSub {
     font-family: stand;
@@ -230,6 +251,9 @@ a {
 	font-size: 8pt;
 }
 
+#feza {
+    color: #e52e71;
+}
  /* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
